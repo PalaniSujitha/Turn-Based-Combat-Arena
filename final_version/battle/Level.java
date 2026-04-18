@@ -17,10 +17,7 @@ public class Level
         backup = b;
     }
     
-    public boolean hasBackup() 
-    {
-        return backup != null && !backup.isEmpty();
-    }
+    public boolean hasBackup() { return backup != null && !backup.isEmpty(); }
     public String getDiff() { return diff; }
     public List<Enemy> getEnemies(){ return enemies; }
     public List<Enemy> getBacks(){ return backup; }

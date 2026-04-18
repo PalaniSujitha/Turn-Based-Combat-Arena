@@ -76,10 +76,7 @@ public abstract class Combatant
     public void setStunned( boolean judge ) { isStunned = judge; }
     public boolean isStunned() { return isStunned; } 
     // effects for player
-    public void heal( int amount )
-    {
-        curHP = Math.min( maxHP , curHP + amount );
-    }
+    public void heal( int amount ) { curHP = Math.min( maxHP , curHP + amount ); }
     // items
     public void setInventory(List<Item> items) { this.inventory = items; }
     public List<Item> getInventory() { return inventory; }

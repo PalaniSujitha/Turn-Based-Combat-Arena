@@ -122,13 +122,15 @@ public class UI
     public static void printRoundHeader(int round) { System.out.println("\n=== Round " + round + " ==="); }
 
     // player turn starts
-    public static void printPlayerOption()
+    public static int printPlayerOption()
     {
         System.out.println("Choose Action:");
         System.out.println("1. Basic Attack");
         System.out.println("2. Defend");
         System.out.println("3. Special Skill");
         System.out.println("4. Use Item");
+        int choice = sc.nextInt();
+        return choice;
     }
     
 
@@ -172,7 +174,7 @@ public class UI
     public static void printNoItem(){ System.out.println("No items available!"); }
     public static void printInvalidChoice(){ System.out.println("Invalid choice!"); }
     public static void printNoTarget(){ System.out.println("No valid target."); }
-    public static void printInvalidInput(){ System.out.println("Invalid input, try again."); } 
+    public static void printInvalidInput(){ System.out.println("Invalid input, try again."); sc.nextLine(); } 
 
 
     // selection UI
@@ -256,7 +258,8 @@ public class UI
         System.out.println("1. Fantastic! I will give it an A+");
         System.out.println("2. Excellent! I will give it an A+");
         System.out.println("3. Perfect! I will give it an A+");
-        sc.nextInt();
+        sc.nextLine();
+        sc.nextLine();
         System.out.println("Thank you so much!!! Here are my gifts for you!!! 🎁🎁🎁🎁🎁");
     }
 

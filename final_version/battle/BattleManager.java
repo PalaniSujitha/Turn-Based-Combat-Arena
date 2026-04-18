@@ -70,8 +70,7 @@ public class BattleManager
         {
             try
             {
-                UI.printPlayerOption();
-                int choice = sc.nextInt();
+                int choice = UI.printPlayerOption();
 
                 Action action = null;
                 List<Combatant> targets = new ArrayList<>(); // enemy list
@@ -130,11 +129,7 @@ public class BattleManager
                 // UI.printAction( player , action , targets );
                 break;
             }
-            catch( Exception e )
-            {
-                UI.printInvalidInput();
-                sc.nextLine(); 
-            }
+            catch( Exception e ){ UI.printInvalidInput(); }
         }
     }
 
@@ -183,9 +178,7 @@ public class BattleManager
         List<Item> inv = player.getInventory();
 
         UI.printSelectItem();
-        for (int i = 0; i < inv.size(); i++) {
-            UI.printItemInfo(i, inv);
-        }
+        for (int i = 0; i < inv.size(); i++) { UI.printItemInfo(i, inv); }
 
         try {
             int choice = sc.nextInt();
@@ -214,24 +207,15 @@ public class BattleManager
     {
 
         // user die
-        if (!player.isAlive()) 
-        {
-            return true;
-        }
+        if (!player.isAlive()) { return true; }
 
         boolean noEnemiesAlive = level.enemies.stream().noneMatch(Enemy::isAlive);
 
         // no backup（Easy）
-        if (!level.hasBackup() && noEnemiesAlive) 
-        {
-            return true;
-        }
+        if (!level.hasBackup() && noEnemiesAlive) { return true; }
 
         // have backup and all killed
-        if (level.hasBackup() && level.backupSpawned && noEnemiesAlive) 
-        {
-            return true;
-        }
+        if (level.hasBackup() && level.backupSpawned && noEnemiesAlive) { return true;}
 
         return false;
     }

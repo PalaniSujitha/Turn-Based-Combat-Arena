@@ -1,5 +1,5 @@
-🎮 Turn-Based Combat Arena (SC2002 OODP Project)
-📌 Project Overview
+Turn-Based Combat Arena (SC2002 OODP Project)
+- Project Overview
 
 This project implements a Turn-Based Combat Arena using Java and Object-Oriented Design Principles (OODP), following SOLID principles.
 
@@ -12,42 +12,42 @@ Use Items
 
 The game continues until either the player defeats all enemies or is defeated.
 
-🚀 Key Features
+- Key Features
 
-⚔️ Turn-Based Combat System
+- Turn-Based Combat System
 Flexible turn execution based on strategy
 Supports multiple combatants (player + enemies)
 Dynamic turn order (e.g. speed-based)
 
-🧠 Object-Oriented Design
+- Object-Oriented Design
 Strong use of:
 Abstraction
 Encapsulation
 Inheritance
 Polymorphism
 
-🧩 Design Patterns Used
+- Design Patterns Used
 Strategy Pattern → Turn order logic (TurnOrderStrategy)
 Factory Pattern → Level and enemy generation (LevelFactory)
 Template Method Pattern → Action & StatusEffect hierarchies
 
-🧪 Status Effects System
+- Status Effects System
 Stun
 Invulnerability
 Defense Boost
 Attack Scaling (Blast Effect)
 
-🎒 Item System
+- Item System
 Potion (heal)
 PowerStone (free skill usage)
 SmokeBomb (temporary invulnerability)
 
-🔄 Dynamic Gameplay
+- Gameplay
 Cooldown management
 Effect duration handling
 Backup enemy spawning
 
-🏗️ Project Structure
+- Project Structure
 src/
 │
 ├── main/                # Entry point
@@ -58,10 +58,10 @@ src/
 ├── item/                # Items
 └── effect/              # Status effects
 
-🎯 How to Run
-✅ Requirements
+- How to Run
+- Requirements
 Java JDK 8 or above
-▶️ Steps
+- Steps
 Clone the repository:
 git clone https://github.com/PalaniSujitha/Turn-Based-Combat-Arena.git
 Compile the project:
@@ -69,51 +69,51 @@ javac *.java
 Run the program:
 java Main
 
-🕹️ Gameplay Instructions
+- Gameplay Instructions
 Choose your character (e.g. Warrior / Wizard)
 Each turn:
 Select an action
 Select target(s) if required
 Defeat all enemies to win
 
-🧠 Design Highlights
-🔹 Centralised Game Control
+- Design Highlights
+- Centralised Game Control
 BattleManager handles:
 Turn flow
 Action execution
 Game state updates
-🔹 Separation of Concerns
+- Separation of Concerns
 UI is separated from game logic
 Improves maintainability and readability
-🔹 Extensibility
+- Extensibility
 Easily add:
 New characters
 New actions
 New effects
 New enemies
 
-👥 Team Members
+- Team Members
 Shi Hongrui
 Palani Sujitha
 Rui Yifan
 Sua Chin Rong
 Pradhan Aniket Kumar
 
-📎 Repository Link
+- Repository Link
 
-👉 https://github.com/PalaniSujitha/Turn-Based-Combat-Arena
+- https://github.com/PalaniSujitha/Turn-Based-Combat-Arena
 
-💡 Reflection (Summary)
+- Reflection (Summary)
 Improved understanding of OODP + SOLID
 Learned how to:
 Reduce coupling
 Design extensible systems
 Apply design patterns in real projects
 
-📌 Notes
+- Notes
 This project is developed for SC2002 Object-Oriented Design and Programming
 For full design details, refer to the project report
 
-⭐ Bonus
-Hidden “cyber gifts” exist in the source code 👀
+- Bonus
+Hidden “cyber gifts” exist in the source code
 (You’ll have to explore to find them!)
